@@ -9,3 +9,41 @@
 .link-notice.visible{opacity:1;visibility:visible;transform:translate(-50%,0)}
 .footer{flex-wrap:wrap}.last-updated{margin-left:auto;margin-right:auto}
 @media(max-width:540px){.footer .last-updated{order:3;width:100%;margin:0;padding-top:9px;border-top:1px solid var(--line)}.contact-buttons{gap:9px}.link-notice{font-size:11px;bottom:15px}}
+/* October 2026 additions: retain the established palette and compact layout. */
+.nav-resume,[data-resume].secondary,[data-resume].contact-secondary{background:#f1c27c;color:#172d43;border:2px solid #9a652a;font-weight:800;box-shadow:0 2px 0 #172d4320}
+.nav-resume:hover,[data-resume].secondary:hover,[data-resume].contact-secondary:hover{background:#ffdaa1;box-shadow:0 3px 10px #172d4330}
+nav>a.nav-active{color:var(--accent);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:7px}
+.project-thumbnail{width:95px;height:90px;object-fit:cover;background:#fff;border-radius:6px;border:1px solid #c9ac8d;flex-shrink:0}
+.project-summary{font-size:11px!important;line-height:1.6;color:#4d5962;margin:0 0 10px!important}.project-meta{font-size:10px;margin:0 0 8px!important;color:#645544}
+.collection-card{align-items:flex-start;scroll-margin-top:100px}.collection-copy h3{min-height:0}.collection-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.collection-button{max-width:100%}.copy-project-link{font-size:10px;border:0;background:transparent;color:#20374c;text-decoration:underline;text-underline-offset:3px;padding:5px 0}.filter-count{font-size:10px;margin:-4px 0 14px;color:#d1dce3}.collection-highlight,.collection-card:target{outline:3px solid #f1c27c;outline-offset:3px}
+.content-disclosure{margin-top:22px;border:1px solid var(--line);border-radius:8px;background:var(--paper);overflow:hidden}.content-disclosure summary{display:flex;justify-content:space-between;align-items:center;gap:15px;cursor:pointer;padding:18px;font-size:15px;font-weight:600;list-style:none}.content-disclosure summary::-webkit-details-marker{display:none}.content-disclosure summary:before{content:'+';font-size:24px;color:var(--accent)}.content-disclosure[open] summary:before{content:'−'}.content-disclosure summary>span:first-of-type{margin-right:auto}.content-disclosure summary small{display:block;font-size:10px;font-weight:400;color:var(--muted);margin-top:5px}.disclosure-label{font-size:9px;color:var(--muted);white-space:nowrap}.content-disclosure>div{padding:0 16px 16px}.content-disclosure summary:focus-visible{outline:3px solid var(--accent);outline-offset:-4px}
+.copy-contact{display:flex;gap:10px}.copy-contact button{background:transparent;color:#fff7ec;border:1px solid #8295a7;border-radius:5px;padding:8px 10px;font-size:11px;flex:1}.copy-contact button:hover{background:#2a455f}
+.whatsapp-widget{position:fixed;bottom:23px;right:22px;z-index:55}.whatsapp-toggle{display:flex;gap:8px;align-items:center;background:#155d46;color:white;border:1px solid #b7d8c9;padding:11px 16px;border-radius:24px;font-size:12px;box-shadow:0 3px 12px #0003}.whatsapp-toggle span{font-size:17px}#whatsapp-panel{position:absolute;bottom:58px;right:0;width:290px;max-width:calc(100vw - 32px);padding:22px;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:10px;box-shadow:0 8px 30px #0003}#whatsapp-panel strong{font-size:15px}#whatsapp-panel p{font-size:12px;margin:12px 0}#whatsapp-panel small{display:block;font-size:9px;color:var(--muted);margin-top:10px}.widget-close{position:absolute;right:8px;top:6px;border:0;background:none;font-size:23px}.mobile-actions{display:none}.footer{padding-right:135px}.link-notice{bottom:82px}
+@media(max-width:1150px){.nav-wrap{gap:10px}nav{gap:10px}nav>a{font-size:10px}.nav-resume{font-size:9px}.project-thumbnail{width:75px;height:75px}}
+@media(max-width:760px){.project-thumbnail{width:65px;height:65px}.collection-card{display:block}.project-thumbnail{float:right;margin:0 0 10px 10px}.collection-symbol{display:none}.collection-actions{clear:both}.hero .eyebrow{line-height:1.8}.content-disclosure summary{padding:15px}.disclosure-label{display:none}.footer{padding-right:0}body{padding-bottom:72px}.mobile-actions{display:flex;position:fixed;bottom:0;top:auto;left:0;right:0;width:100%;padding:9px 12px calc(9px + env(safe-area-inset-bottom));z-index:60;background:var(--paper);border-top:1px solid var(--line);box-shadow:0 -2px 12px #0001;gap:8px;margin:0}.mobile-actions a,.mobile-actions button{flex:1;display:grid;place-items:center;border:1px solid var(--line);border-radius:5px;padding:10px 6px;min-height:41px;font-size:11px;text-decoration:none;font-weight:700}.mobile-actions button{background:#f1c27c;color:#172d43;border-color:#9a652a}.mobile-actions .nav-active{background:var(--light-camel)}.whatsapp-widget{bottom:calc(83px + env(safe-area-inset-bottom));right:14px}.whatsapp-toggle{padding:9px 13px;font-size:10px}.link-notice{bottom:calc(136px + env(safe-area-inset-bottom))}#whatsapp-panel{bottom:49px}.collection-card h3{min-height:0}.internship-grid .timeline-row{display:block}.content-disclosure .timeline-date{margin-bottom:9px}.nav-wrap nav.is-open{max-height:75vh;overflow:auto}}
+@media(max-width:540px){.collection-card{display:block}.project-summary{font-size:11px!important}.project-thumbnail{width:90px;height:70px}.collection-button{font-size:10px}.hero .eyebrow{font-size:7px}.footer{padding-bottom:15px}.hero-actions [data-resume]{font-size:9px}}
+
+/* Refinements: supplied collection covers and restrained contact actions. */
+.nav-resume,[data-resume].secondary,[data-resume].contact-secondary,.mobile-actions button[data-resume]{background:#20374c;color:#fff7ec;border:1px solid #60788d;font-weight:700;box-shadow:0 2px 6px #172d4315}
+.nav-resume:hover,[data-resume].secondary:hover,[data-resume].contact-secondary:hover,.mobile-actions button[data-resume]:hover{background:#304e68;color:#fff7ec;box-shadow:0 3px 10px #172d4325}
+[data-theme=dark] [data-resume]{border-color:#aab9c7}
+.contact-buttons [data-resume]{border-color:#aab9c7;background:#f7f1e8;color:#20374c}
+.contact-buttons [data-resume]:hover{background:#e1ccb2;color:#20374c}
+.collection-card{display:flex;align-items:flex-start;gap:16px;transition:border-color .18s,box-shadow .18s}
+.collection-card:hover,.collection-card:focus-within{border-color:#9a7854;box-shadow:0 4px 14px #0002}
+.thumbnail-link{display:block;width:132px;flex:0 0 132px;aspect-ratio:4/3;background:#eae0d2;border:1px solid #c9ac8d;border-radius:6px;overflow:hidden;transition:box-shadow .18s}
+.thumbnail-link:hover{box-shadow:0 0 0 2px #9a7854}
+.thumbnail-link .project-thumbnail{display:block;width:100%;height:100%;object-fit:cover;float:none;margin:0;background:transparent;border:0;border-radius:0}
+.contact-icon{width:19px;height:19px;flex-shrink:0;vertical-align:middle}
+.email-contact{display:flex;align-items:stretch;border:1px solid #8295a7;border-radius:6px;overflow:hidden}
+.email-contact>a.button{flex:1;border:0;border-radius:0;box-shadow:none;min-width:0}
+.email-contact>a.button:hover{transform:none;background:#304e68}
+.copy-email{display:flex;align-items:center;justify-content:center;gap:5px;padding:0 12px;min-width:44px;background:transparent;color:#fff7ec;border:0;border-left:1px solid #8295a7;font-size:10px}
+.copy-email:hover{background:#304e68}
+.email-contact :focus-visible{outline:2px solid #e1ccb2;outline-offset:-4px}
+.copy-email .contact-icon{width:15px;height:15px}
+@media(max-width:1100px){.thumbnail-link{width:105px;flex-basis:105px}.collection-card{gap:12px}}
+@media(max-width:760px){.collection-card{display:flex}.thumbnail-link{width:110px;flex-basis:110px}}
+@media(max-width:540px){.collection-card{padding:14px;gap:12px}.thumbnail-link{width:92px;flex-basis:92px}.collection-card h3{font-size:20px}.copy-email{padding:0 10px}}
+@media(max-width:360px){.collection-card{flex-direction:column}.thumbnail-link{width:100%;flex-basis:auto;max-height:180px}.collection-copy{width:100%}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}

@@ -1,54 +1,45 @@
-SRISHTI SINGH — PORTFOLIO / REDESIGN
-Static single-page website: HTML, CSS and JavaScript. No installation or build required.
+SRISHTI SINGH PORTFOLIO — 21 OCTOBER 2026
 
-WHAT CHANGED
-Warm beige, camel, and deep navy palette inspired by the supplied portrait.
-Smaller portrait, reduced gaps, compact featured-work cards, career cards, expanded education/award context, and skill/tool panels.
-Navigation groups Work & Experience and Education & Achievements, with Contact, LinkedIn and Resume access. The education menu label is Academics & Awards.
-No Behance profile link, embedded project, visible telephone number, or telephone-call link. WhatsApp remains.
-The phone number necessarily remains in the WhatsApp link destination. The supplied resume PDF is unchanged and retains its original contact details.
+OPEN THE LOCAL COPY
+Extract the entire ZIP, open Windows_Preview, then double-click index.html in Chrome or Edge. No install, server or npm required. Keep all files and folders together.
+The two project PDFs and resume work offline in the supplied viewer. Behance, WhatsApp, email and LinkedIn need the relevant external app or internet connection.
 
-LOCAL PREVIEW ON WINDOWS
-Extract the entire ZIP (right-click > Extract All), then double-click index.html in Chrome or Edge.
-Keep styles.css, script.js and assets in their original locations.
-The page, portrait, filters, themes and resume operate from local files. External collections, LinkedIn, email and WhatsApp need their associated browser/app and internet access.
-Some browsers open a local PDF instead of downloading it; use the PDF viewer's Save control if needed.
+UPLOAD TO GITHUB
+Upload the CONTENTS of GitHub_Upload to the root of https://github.com/srishti21singh/Portfolio (not the enclosing folder and not this ZIP). Replace matching files; include viewer.html, viewer.css, viewer.js, and all new assets/vendor and assets/projects files.
+GitHub Pages settings: Deploy from a branch > main > /(root).
+Site address: https://srishti21singh.github.io/Portfolio/
+No repository upload or deployment was performed here.
 
-GITHUB PAGES
-Repository: https://github.com/srishti21singh/Portfolio
-Upload the extracted CONTENTS (index.html, styles.css, script.js and assets folder) to the repository root, replacing the corresponding previous files.
-Do not upload only the ZIP or add an enclosing folder around index.html.
-Repository Settings > Pages > Deploy from a branch > main > /(root) > Save.
-Expected address: https://srishti21singh.github.io/Portfolio/
-The package has not been uploaded or published by the assistant.
-Guide: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+CHANGES
+- Original colours, layout and portrait retained.
+- Resume replaced with the exact newly supplied PDF.
+- Ten collections: eight direct Behance links and two hosted PDF projects.
+- PDF projects open a dedicated viewing utility in a new tab, with continuous vertical scrolling, zoom, fit-width and fullscreen controls. This is not a new portfolio section/page layout.
+- Only the resume has a Download button. Public project files can still be saved by technically determined visitors or captured in screenshots.
+- Placement Print Design: 8.4 MB, 35 pages. All Over Print Designs: 4.4 MB, 9 pages. Resume: approximately 0.5 MB, 2 pages.
+- PDF files load only when requested, not on the home page. The viewer provides progress/loading notices. Rendering a complex page can take time on a slower phone.
+- Default theme is light on every fresh page load; no saved/device dark preference is applied.
+- Portfolio and Experience are separate menu items; active sections are highlighted.
+- Older internships and supporting research use expandable sections.
+- Each collection has a stable #collection-... link and Copy link action. Direct links reveal and highlight the matching card even if filters were used.
+- Email and compact copy control in one container; WhatsApp and email icons; mobile quick actions; floating WhatsApp contact panel.
+- Professional navy Resume buttons, with a cream version on the navy contact panel.
+- Hero qualification is National Institute of Design graduate. Hero/client positioning uses global clients. The supplied resume itself is unchanged.
 
-COLLECTIONS
-Both collection cards, LinkedIn, WhatsApp and View PDF open in a new tab. A brief notice appears on focus, hover or click. Email opens the configured mail app or browser composer; browser settings determine this behaviour. Download PDF saves the resume without navigating away.
-Space Design: https://www.behance.net/gallery/116091583/Space-Design
-Illustrations and Patterns: https://www.behance.net/gallery/104863769/Illustrations-and-Patterns
-No collection download buttons or embeds are included. Behance controls its own external page and features.
-The small geometric icons are decorative navigation symbols, not project previews.
+THUMBNAILS
+All ten supplied thumbnails are mapped to the corresponding collections. WebP copies keep the page lightweight. The frames share a 4:3 ratio and use cover sizing, so artwork fills the frame without stretching; edges may be cropped. Click either the thumbnail or its collection button.
 
-ANALYTICS — NOT YET ENABLED
-No tracking code or invented visitor counts are included.
-For Cloudflare Web Analytics, add a site with hostname srishti21singh.github.io.
-Copy the dashboard-issued snippet from Manage site and insert it at the marked comment before </body> in the HOSTED index.html only. Keep the local preview without analytics.
-Use the private dashboard for visits and page views. These are not exact counts of unique people and can be affected by blocking.
+PDF VIEWER DETAILS
+The viewer bundles Mozilla PDF.js 5.6.205 and its JPEG 2000 decoder; licenses are under assets/vendor. No external CDN is needed.
+GitHub loads original PDFs with a worker. The local package uses script-loaded copies of the PDF bytes to support file:// without a server. This makes the local package larger; upload only GitHub_Upload.
+Do not copy Windows_Preview/assets/pdf-data into GitHub. Editing a project PDF in the local package also requires regenerating its matching script data, so request an updated package when the PDF changes.
+Fit width is 100%; zoom ranges from 50% to 300% of that fitted width. Scroll vertically through every page; scroll horizontally when zoomed in. Nearby pages render progressively, and distant canvases are released to reduce memory use. The toolbar stays visible and the page indicator follows the reading position. Fullscreen uses browser support, with an expanded-view fallback.
+The PDFs are rendered as canvas pages; the viewer is for visual review, not editable text or form entry. The original resume remains downloadable.
+
+CLOUDFLARE ANALYTICS
+Not enabled: no account or token has been supplied. Add the dashboard-issued Web Analytics snippet before </body> in the HOSTED index.html only. Hostname: srishti21singh.github.io. Keep local tracking disabled.
 Guide: https://developers.cloudflare.com/web-analytics/get-started/
 
-EDITING
-index.html: content, dates, links, skills and collection cards.
-styles.css: colours, portrait dimensions, layouts and responsive breakpoints.
-script.js: theme, mobile menu, filters, reading progress and resume dialog.
-assets/Srishti-Singh-Resume.pdf: supplied PDF; replace using the same filename.
-assets/srishti-singh.png: supplied portrait, unchanged. Its crop and frame are CSS only.
-
 VALIDATION
-Checked JavaScript syntax, local assets, internal anchors, IDs, requested removals and links.
-Exercised theme memory, progress calculation, resume dialog, filters and mobile menu in a DOM simulation.
-Responsive breakpoints cover wide desktop, tablet and narrow mobile layouts. Real browser visual testing was not available in this environment; check the design on your devices before publishing.
-Test light and dark modes, mobile Menu, both collection links, WhatsApp pre-filled message, LinkedIn, resume view/download and keyboard focus.
-
-LATEST REVISION
-Full city, state and country for each workplace. Generic opportunity statement. Email contact button. Footer update date: October 2026.
+Verified all ten thumbnail-to-collection links, local resource references, and JavaScript syntax. PDF bytes and resume remain unchanged from the preceding version.
+Checked desktop and 390px-wide mobile layouts in Chrome. Verified scrolling to page 35, zoom while retaining the reading position, and the bundled local-data loading path in a browser preview. The Windows file:// package has not been run on a physical Windows device; extract the ZIP fully before opening index.html.
